@@ -15,7 +15,7 @@
     <!-- Resources -->
     <resources>
       <code path="index.ts" order="1"/>
-   <!--   <css path="css/ExcelUpload.css" order="1" />    If i want to add a css file later-->
+   <css path="css/ExcelUpload.css" order="1" />   
       <!-- Add XLSX library if you want to parse Excel files -->
       <!-- <platform-library name="xlsx" version="0.18.5" /> -->
     </resources>

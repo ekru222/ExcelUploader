@@ -184,7 +184,7 @@ export class ExcelUpload implements ComponentFramework.StandardControl<IInputs, 
                                 <line x1="12" y1="3" x2="12" y2="15"/>
                             </svg>
                         </div>
-                        <h1 class="excel-title">Upload BiWeekly Employee Roster File</h1>
+                        <h1 class="excel-title">Upload DOI BiWeekly Employee Roster File</h1>
                         <p class="excel-subtitle">Select an Excel file to upload</p>
                     </div>
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="fb" constructor="ExcelUpload" version="1.0.0" display-name-key="ExcelUpload" description-key="Excel file upload control" control-type="standard">
+    
+    <!-- Property node defines the input/output properties -->
+    <property name="fileName" display-name-key="File Name" description-key="Name of the uploaded file" of-type="SingleLine.Text" usage="output" />
+    
+    <property name="fileData" display-name-key="File Data" description-key="Base64 encoded file data" of-type="Multiple" usage="output" />
+    
+    <property name="uploadStatus" display-name-key="Upload Status" description-key="Status of the upload (success, error, none)" of-type="SingleLine.Text" usage="output" default-value="none" />
+
+    <!-- Optional: Input property to trigger reset -->
+    <property name="resetTrigger" display-name-key="Reset Trigger" description-key="Change this value to reset the control" of-type="SingleLine.Text" usage="input" />
+
+    <!-- Resources -->
+    <resources>
+      <code path="index.ts" order="1"/>
+   <!--   <css path="css/ExcelUpload.css" order="1" />    If i want to add a css file later-->
+      <!-- Add XLSX library if you want to parse Excel files -->
+      <!-- <platform-library name="xlsx" version="0.18.5" /> -->
+    </resources>
+
+    <!-- Feature usage flags -->
+    <feature-usage>
+      <!-- Uncomment if you need these features -->
+      <!-- <uses-feature name="Device.captureAudio" required="false" />
+      <uses-feature name="Device.captureImage" required="false" />
+      <uses-feature name="Device.captureVideo" required="false" />
+      <uses-feature name="Device.getBarcodeValue" required="false" />
+      <uses-feature name="Device.getCurrentPosition" required="false" />
+      <uses-feature name="Device.pickFile" required="true" /> -->
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+
+  </control>
+</manifest>
